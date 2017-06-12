@@ -7,18 +7,17 @@ Updated to use Java 8 and Gradle.
 
 ## Prerequisites ##
 - JDK 8 
-- Maven 3.0.3 or newer
 
 ## Test ##
 
 ```
-mvn clean test
+./gradlew clean test
 ```
 
 ## Build runnable JAR ##
 
 ```
-mvn clean package
+./gradlew clean build
 ```
 
 ## Run ##
