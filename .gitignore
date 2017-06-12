@@ -6,6 +6,8 @@
 
 # Folders #
 target
+build
+.idea
 
 # Package Files #
 *.jar
