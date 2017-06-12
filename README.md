@@ -23,5 +23,5 @@ Updated to use Java 8 and Gradle.
 ## Run ##
 
 ```
-java -jar PATH/TO/simple-jpa-hibernate-guice-0.1.jar
+java -jar $PATH_TO/simple-jpa-hibernate-guice-0.1.jar
 ```
