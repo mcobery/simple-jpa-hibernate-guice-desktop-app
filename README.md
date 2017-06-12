@@ -2,11 +2,11 @@ simple-jpa-hibernate-guice-desktop-app
 ======================================
 
 A simple proof-of-concept of a desktop Java application with database access using JPA, Hibernate and Guice.
+Updated to use Java 8 and Gradle.
 
-[![Build Status](https://drone.io/github.com/pires/simple-jpa-hibernate-guice-desktop-app/status.png)](https://drone.io/github.com/pires/simple-jpa-hibernate-guice-desktop-app/latest)
 
 ## Prerequisites ##
-- JDK 6
+- JDK 8 
 - Maven 3.0.3 or newer
 
 ## Test ##

@@ -1,0 +1,33 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.github.pires'
+version = '0.1'
+
+description = """Simple JPA + Hibernate + Guice project"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.0-api', version:'1.0.1.Final'
+    compile group: 'com.google.inject.extensions', name: 'guice-persist', version:'3.0'
+    compile group: 'com.h2database', name: 'h2', version:'1.3.167'
+    compile group: 'org.hibernate', name: 'hibernate-core', version:'4.1.4.Final'
+    compile group: 'org.hibernate', name: 'hibernate-entitymanager', version:'4.1.4.Final'
+    testCompile group: 'junit', name: 'junit', version:'4.10'
+    compile(group: 'org.hibernate', name: 'hibernate-jpamodelgen', version:'1.2.0.Final') {
+       /* This dependency was originally in the Maven provided scope, but the project was not of type war.
+       This behavior is not yet supported by Gradle, so this dependency has been converted to a compile dependency.
+       Please review and delete this closure when resolved. */
+    }
+}
